@@ -5,7 +5,35 @@ body {
 .container {
     background-color: salmon;
     width: 100%;
-    min-width: 300px;
+    min-height: 300px;
+}
+
+nav.navbar{
+    background-color: darkseagreen;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+nav.navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav.navbar li{
+    border-bottom: 2px solid darkred;
+}
+
+nav.navbar li:last-child{
+    border-bottom: none;
+}
+
+nav.navbar a{
+    font-size: 22px;
+    text-decoration: none;
+    color: darkred;
+    line-height: 36px;
 }
 
 @media (min-width: 768px){
