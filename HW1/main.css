@@ -82,6 +82,14 @@ nav a{
     margin: 40px;
 }
 
+.quote {
+    font-size: 23px;
+    color: rgb(184, 184, 184);
+    margin: 110px 100px 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.2px;
+}
+
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {
     nav {
@@ -129,6 +137,11 @@ nav a{
 
     .art {
         margin: 0px 130px 40px;
+    }
+
+    .quote {
+        font-size: 25px;
+        margin: 150px 250px 80px;
     }
 
 }
