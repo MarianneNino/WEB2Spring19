@@ -32,7 +32,7 @@ nav ul{
     content: '';
     position: absolute;
     width: 21px;
-    /*border-top: 3px solid gray;*/
+    border-top: 3px solid gray;
     height: 3px;;
 }
 
@@ -44,6 +44,7 @@ nav li {
     background-color: rgb(0, 0, 0);
     padding: 15px 20px;
     text-align: center;
+    border-bottom: 1px solid rgba(165, 204, 209, 0.356);
     font-size: 20p;
 }
 
@@ -55,6 +56,7 @@ nav li:last-child {
     margin: 0px auto 20px;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 nav a{
@@ -62,6 +64,20 @@ nav a{
     text-decoration: none;
     color: #EE4266;
     line-height: 36px;
+}
+
+.arth1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(165, 204, 209);
+    margin-top: -150px;
+}
+    
+.art {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 40px;
 }
 
 /*--------Tablet size and above-----------*/
@@ -82,7 +98,7 @@ nav a{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         display: inline-block;
         border-bottom: 0px;
-        min-width: 19%;
+        min-width: 9%;
         font-size: 18px;
     }
 
@@ -96,19 +112,23 @@ nav a{
         background-color: rgb(217, 247, 247);
     }
 
-    .clearfix {
-        clear: both;
-    }
-
     .display-toggle {
         display: none;
     }
 
     .arth1{
-        font-size: 70px;
-        margin-top: -270px;
-        color: #A5CCD1;
+        font-size: 92px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: -325px;
+        margin-bottom: -46px;
+        margin-left: 79;
+        color: rgba(165, 204, 209, 0.603);
     }
+
+    .art {
+        margin: 0px 130px 40px;
+    }
+
 }
 
 /*------DESKTOP SIZE AND ABOVE----------*/
@@ -124,5 +144,9 @@ nav a{
 
     .display-toggle {
         display: none;
+    }
+
+    .art {
+        margin: 0px 165px 40px;
     }
 }
