@@ -42,6 +42,10 @@ nav.navbar a{
         width: 750px;
         margin: 0px auto;
     }
+
+    nav.navbar li{
+        display: inline-block;
+    }
 }
 
 @media (min-width: 992px){
