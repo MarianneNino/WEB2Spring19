@@ -67,12 +67,24 @@ nav a{
     color: #EE4266;
     line-height: 36px;
 }
+.active-link {
+    border-bottom: 3px solid rgba(255, 56, 99, 0.603);
+}
+
+/*BODY*/
 
 .arth1{
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(165, 204, 209, 0.603);
     margin-top: -163px;
+}
+
+.subtitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+    padding-top: 40px;
 }
     
 .art {
@@ -135,6 +147,10 @@ nav a{
         color: rgba(165, 204, 209, 0.897);
     }
 
+    .subtitle {
+        margin-left: 130px;
+    }
+
     .art {
         margin: 0px 130px 40px;
     }
@@ -159,6 +175,10 @@ nav a{
 
     .display-toggle {
         display: none;
+    }
+
+    .subtitle {
+        margin-left: 165px;
     }
 
     .art {
