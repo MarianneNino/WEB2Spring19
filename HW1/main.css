@@ -61,14 +61,16 @@ nav li:last-child {
     height: 200px;
 }
 
+.active-link {
+    /*border-bottom: 3px solid rgba(255, 56, 99, 0.603);*/
+    font-weight: 700;
+}
+
 nav a{
     font-size: 22px;
     text-decoration: none;
     color: #EE4266;
     line-height: 36px;
-}
-.active-link {
-    border-bottom: 3px solid rgba(255, 56, 99, 0.603);
 }
 
 /*BODY*/
