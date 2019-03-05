@@ -1,0 +1,206 @@
+body {
+    margin: 0px;
+}
+
+/* NAVIGATION*/
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    display: none;
+    margin: 0px;
+}
+
+.display-toggle {
+    padding: 3px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    /*float: right;*/
+}
+
+.display-toggle .stripe {
+    display: block;
+    margin-bottom: 7px;
+    width: 10px;
+    height: 1px;
+    margin-top: 4px;
+}
+
+.display-toggle .stripe::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    border-top: 3px solid gray;
+    height: 3px;
+}
+
+.display-toggle:hover + ul {
+    display: block;
+}
+
+nav li {
+    background-color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(165, 204, 209, 0.356);
+    font-size: 20px;
+}
+
+nav li:last-child {
+    border-bottom: 0px;
+}
+
+.image-container {
+    margin: 0px auto 20px;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.active-link {
+    /*border-bottom: 3px solid rgba(255, 56, 99, 0.603);*/
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #E0CA3C;
+    line-height: 36px;
+}
+
+/*CONTAINERS*/
+
+.container {
+    background-color: oldlace;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.yellow {
+    background-color: yellowgreen;
+}
+
+.cyan {
+    background-color: darkcyan;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*********SMALL SCREENS************/
+
+@media (min-width: 450px){
+    .small-width-25 {
+        width: 25%;
+    }
+
+    .small-width-33 {
+        width: 33.3333%;
+    }
+
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+}
+
+/*********MEDIUM SCREENS************/
+@media (min-width: 768px){
+    .med-width-25 {
+        width: 25%;
+    }
+
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+}
+
+    /*nav*/
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    margin: 0px;
+    display: block;
+    text-align: right;
+    list-style: none;
+}
+nav li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    border-bottom: 0px;
+    min-width: 9%;
+    font-size: 18px;
+}
+
+.display-toggle {
+    display: none;
+}
+
+/*********LARGE SCREENS************/
+@media (min-width: 992px) {
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.3333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
+
+    /*nav*/
+nav ul{
+    display: block;
+}
+
+.display-toggle {
+    display: none;
+}
+
