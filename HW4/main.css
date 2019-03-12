@@ -129,6 +129,16 @@ p {
     padding: 1px 10px;
 }
 
+.box-container a {
+    color: #82AEB1;
+    font-size: 22px;
+}
+
+.box-container3 a {
+    color: #82AEB1;
+    font-size: 22px;
+}
+
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {
     nav {
