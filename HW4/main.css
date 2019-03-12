@@ -102,6 +102,14 @@ p {
     line-height: 30px;
 }
 
+strong {
+    color: #0E3B43;
+}
+
+.box-container3 h2 {
+    margin-top: 20px;
+}
+
 /*products page*/
 
 .title {
