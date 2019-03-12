@@ -1,0 +1,28 @@
+.content {
+    padding: 0px 10px;
+    min-height: 516px;
+    border-bottom: 2px solid darkorchid;
+    position: relative;
+}
+
+.content .img-container {
+    min-height: 225px;
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.content .abs-pos {
+    position: absolute;
+}
+
+#JkrOverlap {
+    top: 30px;
+}
+
+#jkrTitle {
+    top: 200px;
+    right: 30px;
+    color: whitesmoke;
+}
