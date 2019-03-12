@@ -76,8 +76,9 @@ h1 {
     font-size: 45px;
     color: #EBBAB9;
     text-shadow: 3px 3px 10px black;
-    margin-top: -95px;
+    /*margin-top: -95px;*/
     text-align: center;
+    margin-top: 95px;
 }
 
 h2 {
@@ -85,13 +86,47 @@ h2 {
 }
 
 .box-container {
-    height: 500px;
+    height: 800px;
     padding: 0px 50px;
 }
 
 .box-container img{
     height: 350px;
+    /*margin-top: 100px;*/
+    padding-top: 197px;
     margin-top: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*products page*/
+
+.title {
+    margin-top: 150px;
+}
+
+.box-container2 {
+    width: 90%;
+    padding: 1px 0px;
+}
+
+.box-container2 img{
+    width: 100%;
+    margin: auto;
+    /*margin-top: 100px;*/
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.box-container3 {
+    width: 40%;
+    margin: auto;
+    /*margin-top: 100px;*/
+    margin-top: 50px;
+    padding: 1px 10px;
 }
 
 /*--------Tablet size and above-----------*/
@@ -125,7 +160,7 @@ h2 {
 
     h1 {
         font-size: 70px;
-        margin-top: -140px;
+        /*margin-top: -140px;*/
     }
 
     main {
@@ -134,6 +169,19 @@ h2 {
         background-color: rgb(217, 247, 247);
     }
 
+    .box-container {
+        height: 450px;
+        padding: 1px 30px;
+        margin-bottom: 50px;
+        padding-bottom: 350px;
+    }
+    
+    .box-container img{
+        height: 380px;
+        margin-top: 50px;
+        padding: 0px;
+        padding-top: 150px;
+    }
 
 
 }
@@ -155,6 +203,23 @@ h2 {
 
     h1 {
         font-size: 90px;
-        margin-top: -150px;
+        /*margin-top: -150px;*/
+    }
+    
+    .box-container {
+        height: 500px;
+        padding: 1px 100px;
+        margin-bottom: 270px;
+
+    }
+    
+    .box-container img{
+        height: 680px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .box-container h2 {
+        padding-top: 100px;
     }
 }
