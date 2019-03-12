@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+    margin: 0px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* NAVIGATION*/
+nav ul{
+    list-style: none;
+    padding: 0px;
+    display: none;
+    margin: 0px;
+}
+
+.display-toggle {
+    padding: 3px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+}
+
+.display-toggle .stripe {
+    display: block;
+    margin-bottom: 7px;
+    width: 10px;
+    height: 1px;
+    margin-top: 4px;
+}
+
+.display-toggle .stripe::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    border-top: 3px solid gray;
+    height: 3px;
+}
+
+.display-toggle:hover + ul {
+    display: block;
+}
+
+nav li {
+    background-color: #0E3B43;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(165, 204, 209, 0.356);
+    font-size: 20px;
+}
+
+nav li:last-child {
+    border-bottom: 0px;
+}
+
+.active-link {
+    font-weight: 900;
+}
+
+nav a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #EBBAB9;
+    line-height: 36px;
+}
+
+/*Body*/
+
+.image-container {
+    margin: 0px auto 20px;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+/*--------Tablet size and above-----------*/
+@media(min-width: 768px) {
+    nav {
+        background-color: #0E3B43;
+        position: fixed;
+        width: 100%;
+    }
+
+    nav ul{
+        /*margin: 0px;*/
+        display: inline-block;
+        text-align: center;
+        list-style: none;
+   }
+    nav li {
+        display: inline-block;
+        border-bottom: 0px;
+        min-width: 14%;
+        font-size: 18px;
+    }
+
+    .image-container {
+        height: 500px;
+    }
+
+    main {
+        width: 750px;
+        margin: auto;
+        background-color: rgb(217, 247, 247);
+    }
+
+    .display-toggle {
+        display: none;
+    }
+
+    .arth1{
+        font-size: 92px;
+        margin-top: -372px;
+        margin-bottom: -46px;
+        margin-left: 79;
+        color: rgba(165, 204, 209, 0.897);
+    }
+
+    .subtitle {
+        margin-left: 130px;
+    }
+
+    .art {
+        margin: 0px 130px 40px;
+    }
+
+    .quote {
+        font-size: 25px;
+        margin: 150px 250px 80px;
+    }
+
+}
+
+/*------DESKTOP SIZE AND ABOVE----------*/
+
+@media(min-width: 960px) {
+    main {
+        width: 1125px;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    .display-toggle {
+        display: none;
+    }
+
+    .subtitle {
+        margin-left: 165px;
+    }
+
+    .art {
+        margin: 0px 165px 40px;
+    }
+}
