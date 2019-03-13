@@ -86,12 +86,12 @@ h2 {
 }
 
 .box-container {
-    height: 800px;
+    height: 675px;
     padding: 0px 50px;
 }
 
 .box-container img{
-    height: 350px;
+    width: 100%;
     /*margin-top: 100px;*/
     padding-top: 197px;
     margin-top: 50px;
@@ -117,8 +117,7 @@ strong {
 }
 
 .box-container2 {
-    width: 90%;
-    padding: 1px 0px;
+    width: 100%;
 }
 
 .box-container2 img{
@@ -126,15 +125,13 @@ strong {
     margin: auto;
     /*margin-top: 100px;*/
     margin-top: 50px;
-    padding-left: 20px;
 }
 
 .box-container3 {
-    width: 40%;
+    width: 59%;
     margin: auto;
     /*margin-top: 100px;*/
     margin-top: 50px;
-    padding: 1px 10px;
 }
 
 .box-container a {
@@ -149,6 +146,14 @@ strong {
 
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {
+    .space {
+        height: 500px;
+    }
+    
+    .container {
+        max-width: 768px;
+    }
+    
     nav {
         background-color: #0E3B43;
         position: fixed;
@@ -173,7 +178,7 @@ strong {
     }
 
     .image-container {
-        height: 500px;
+        width: 100%;
     }
 
     h1 {
@@ -181,24 +186,26 @@ strong {
         /*margin-top: -140px;*/
     }
 
-    main {
+    /*main {
         width: 750px;
         margin: auto;
         background-color: rgb(217, 247, 247);
-    }
+    }*/
 
     .box-container {
-        height: 450px;
+        height: 688px;
         padding: 1px 30px;
         margin-bottom: 50px;
-        padding-bottom: 350px;
+        /*padding-bottom: 350px;*/
+        width: 100%;
+        margin: auto;
     }
     
     .box-container img{
-        height: 380px;
+        width: 100%;
         margin-top: 50px;
-        padding: 0px;
-        padding-top: 150px;
+        padding-top: 45px;
+        height: 0px;
     }
 
 
@@ -225,16 +232,12 @@ strong {
     }
     
     .box-container {
-        height: 500px;
-        padding: 1px 100px;
-        margin-bottom: 270px;
+        height: 80%;
 
     }
     
     .box-container img{
-        height: 680px;
-        padding-left: 0px;
-        padding-top: 0px;
+        height: 42%;
     }
 
     .box-container h2 {
