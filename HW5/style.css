@@ -2,20 +2,11 @@
     position: relative;
 }
 
+/*FIRST IMAGE/TOP*/
+
 #vertCenter1 {
     height: 400px;
 }
-
-/*#vertCenter2,
-#vertHorizCenter1 {
-    height: 900px;
-}*/
-
-/*#vertCenter1 img{
-    background-image: url(https://www.hbo.com/content/dam/hbodata/series/true-blood/episodes/7/true-blood-7-3000x1688.jpg);
-    background-position: right top;
-    height: 900px;
-}*/
 
 .small-width-100 #vertCenter1{
     max-height: 200px;
@@ -25,8 +16,6 @@
     height: 400px;
 }
 
-
-
 .small-width-100 #vertCenter1 img {
     position: absolute;
     height: 221px; /* because we need to calculate the margin */
@@ -35,13 +24,6 @@
     display: block;
 }
 
-
-#Lorem1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0px; /* MARGINS affect the centering in this method! */
-}
 
 .med-width-100 #vertCenter1 img {
     position: absolute;
@@ -59,21 +41,173 @@
     display: block;
 }
 
-#vertHorizCenter1 img {
+body {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 28px;
+}
+
+/*SECOND AND 3RD BLOCK OF INFO*/
+
+.content h1 {
+    /*padding-left: 50px;*/
+    margin-left: 30px;
+}
+
+.small-width-100 #vertCenter2 #Lorem1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px; /* MARGINS affect the centering in this method! */
+    margin-top: 309px;
+    padding: 0px 40px;
+}
+
+#vertHorizCenter1 h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 30px;
+    margin-left: -111px;
+    width: 258px;
+    margin-top: 237px;
+}
+
+/*medium*/
+
+.med-width-50 #vertHorizCenter1 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    margin-left: 145px;
+    width: 258px;
+    margin-top: 237px;
+}
+
+
+.small-width-100 #vertHorizCenterH h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    margin-left: -86px;
+    width: 258px;
+    margin-top: 32px;
+}
+
+/*medium*/
+.med-width-50 #vertHorizCenterH h2 {
+    left: -2%;
+    margin-left: -86px;
+    margin-top: 247px;
+}
+
+
+.small-width-100 #vertHorizCenterImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
    /* padding: 30px;*/
 
     /* Half the width accounting for padding and border */
-    margin-left: -159px;
-    width: 258px;
+    margin-left: -128px;
+    width: 75%;
     
     /* Half the height accounting for padding and border */
-    margin-top: -44px;
-    height: 28px;
+    margin-top: 29px;
+    height: 400px;
+
+}
+
+.small-width-100 #vertHorizCenterImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+   /* padding: 30px;*/
+
+    /* Half the width accounting for padding and border */
+    margin-left: -128px;
+    width: 84%;
     
-    background-color: beige;
+    /* Half the height accounting for padding and border */
+    margin-top: 29px;
+    height: 400px;
+
+}
+
+.med-width-25 #vertHorizCenterImg img {
+    margin-left: -175px;
+    margin-top: 212px;
+    height: 349px;
+}
+
+.large-width-25 #vertHorizCenterImg img {
+    left: 118%;
+
+}
+
+.small-width-100 #vertHorizCenter2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+   /* padding: 30px;*/
+
+    /* Half the width accounting for padding and border */
+    margin-left: -175px;
+    width: 84%;
+    
+    /* Half the height accounting for padding and border */
+    margin-top: -281px;
+    height: 429px;
+}
+
+.med-width-33 #vertHorizCenter2 img {
+    top: 66%;
+    right: 71%;
+    height: 564px;
+    width: 100%;
+}
+
+.large-width-50 #vertHorizCenter2 img {
+    top: 161%;
+    left: -15%;
+    right: 71%;
+    height: 429px;
+    width: 100%;
+}
+
+.small-width-100 #vertHorizCenter3 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+   /* padding: 30px;*/
+
+    /* Half the width accounting for padding and border */
+    margin-left: -175px;
+    width: 80%;
+    
+    /* Half the height accounting for padding and border */
+    margin-top: -232px;
+    height: 420px;
+}
+
+.med-width-33 #vertHorizCenter3 img {
+    top: 174px;
+    left: 211%;
+    height: 429px;
+    width: 100%;
+}
+
+.large-width-50 #vertHorizCenter3 img {
+    top: 174px;
+    left: 211%;
+    height: 429px;
+    width: 100%;
 }
 
 #vertHorizCenter2 p {
