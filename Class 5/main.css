@@ -1,0 +1,18 @@
+.content {
+    background-color: aqua;
+    min-height: 200px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+
+}
+
+p {
+    
+}
