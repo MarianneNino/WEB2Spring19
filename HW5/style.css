@@ -26,19 +26,14 @@
 
 
 .med-width-100 #vertCenter1 img {
-    position: absolute;
     height: 259px; /* because we need to calculate the margin */
     margin-top: -221px;
-    top: 50%;
-    display: block;
 }
 
 .large-width-100 #vertCenter1 img {
-    position: absolute;
     height: 431px; /* because we need to calculate the margin */
     margin-top: -202px;
     top: 33%;
-    display: block;
 }
 
 body {
@@ -114,23 +109,6 @@ body {
     /* Half the width accounting for padding and border */
     margin-left: -128px;
     width: 75%;
-    
-    /* Half the height accounting for padding and border */
-    margin-top: 29px;
-    height: 400px;
-
-}
-
-.small-width-100 #vertHorizCenterImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100px;
-   /* padding: 30px;*/
-
-    /* Half the width accounting for padding and border */
-    margin-left: -128px;
-    width: 84%;
     
     /* Half the height accounting for padding and border */
     margin-top: 29px;
