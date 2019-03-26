@@ -76,7 +76,7 @@ nav a{
 /*BODY*/
 .content {
     padding: 0px 10px;
-    min-height: 480px;
+    min-height: 270px;
     position: relative;
 }
 
@@ -97,6 +97,16 @@ nav a{
 
     margin: 0px;
     text-align: justify;
+}
+
+#vertHorizCenter1 h1 {
+    
+    /* Half the height accounting for padding and border */
+    margin: auto;
+    height: 28px;
+    
+    text-align: center;
+    font-size: 60px;
 }
 
 /*--------Tablet size and above-----------*/
