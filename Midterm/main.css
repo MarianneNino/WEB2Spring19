@@ -74,7 +74,30 @@ nav a{
 }
 
 /*BODY*/
+.content {
+    padding: 0px 10px;
+    min-height: 480px;
+    position: relative;
+}
 
+.content .img-container {
+    min-height: 160px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+#vertHorizCenter2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0px;
+    text-align: justify;
+}
 
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {

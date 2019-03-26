@@ -1,6 +1,5 @@
 .container {
     margin: auto;
-    background-color: rgb(253, 199, 217);
 }
 
 .floater-section {
@@ -8,6 +7,14 @@
     width: 100%;
     min-height: 200px;
     margin-bottom: 20px;
+}
+
+.hide {
+    display: hide;
+}
+
+.show {
+    display: initial;
 }
 
 .clearfix {
