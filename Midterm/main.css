@@ -99,6 +99,17 @@ nav a{
     text-align: justify;
 }
 
+#vertHorizCenter3 p {
+    position: absolute;
+    top: 50%;
+    left: 39%;
+
+    transform: translate(-24%, -50%);
+
+    margin: 0px;
+    text-align: justify;
+}
+
 #vertHorizCenter1 h1 {
     
     /* Half the height accounting for padding and border */
