@@ -85,7 +85,7 @@ nav a{
 }
 
 .content img {
-    max-width: 100%;
+    max-width: 96%;
 }
 
 #vertHorizCenter2 p {
@@ -126,6 +126,7 @@ nav a{
         background-color: black;
         position: fixed;
         width: 100%;
+        z-index: 19;
     }
 
     nav ul{
