@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 
 body {
     margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 /* NAVIGATION*/
@@ -74,6 +78,18 @@ nav a{
 }
 
 /*BODY*/
+
+h1{
+    font-family: 'Tangerine', cursive;
+    color: white;
+    font-size: 80px;
+    margin-top: -94px;
+    margin-bottom: 87px;
+    margin-right: 13px;
+    /* margin: 87px; */
+    text-align: right;
+}
+
 .content {
     padding: 0px 10px;
     min-height: 450px;
@@ -120,6 +136,13 @@ nav a{
     font-size: 60px;
 }
 
+/*--------Small size and above-----------*/
+@media (min-width: 450px){
+    h1 {
+        font-size: 80px;
+    }
+
+
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {
     nav {
@@ -154,4 +177,15 @@ nav a{
         display: none;
     }
 
+    h1 {
+        font-family: 'Tangerine', cursive;
+        color: white;
+        font-size: 124px;
+        margin-top: -108px;
+        margin-bottom: 87px;
+        margin-right: 43px;
+        /* margin: 87px; */
+        text-align: right;
+    }
 }
+
