@@ -82,7 +82,7 @@ h1{
     margin-right: 13px;
     /* margin: 87px; */
     text-align: right;
-    text-shadow: 2px;
+    text-shadow: 2px 2px 10px #4F345A;
 }
 
 .content {
@@ -217,6 +217,10 @@ h1{
         left: 20%;
         transform: translate(-20%, 30%);
     }
+
+    .content {
+        padding: 0px;
+    }
 }
 
 /*--------Large size and above-----------*/
@@ -226,17 +230,18 @@ h1{
     } 
 
     #vertHorizCenter2 {
-        top: 47%;
+        top: 61%;
         left: 68%;
-        transform: translate(-68%, 38%);    
+        transform: translate(-68%, 61%);    
     }
     
     #vertHorizCenter3 {
-        top: 50%;
+        top: 72%;
         left: 20%;
-        transform: translate(-22%, 48%);
+        transform: translate(-22%, 72%);
     }
 
     .content {
         min-height: 229px;
+        padding: 0px;
     }
