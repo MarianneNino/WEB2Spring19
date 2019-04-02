@@ -242,6 +242,86 @@ tbody {
     padding-bottom: 40px;
 }
 
+/*-------Contact Information---------*/
+
+.contact_about .contact_h1 {
+    margin-top: 0;
+}
+
+.about_p {
+    margin-top: 93px;
+}
+
+.form1 p {
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: .4px;
+    line-height: 29px;
+}
+
+.forms {
+    /*font-family: 'Cabin', sans-serif;*/
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+.info {
+    align-content: center;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first_form {
+    width: 550px;
+    margin: auto;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+#subject {
+    height: 150px;
+    width: 100%;
+    display: block;
+    padding: 0px 10px;
+    border: 1px solid #e3e3e3;
+    margin-top: 15px;
+    font-size: 17px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+#fullName,#emailAddress,#subjectInfo {
+    font-size: 17px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 0px 10px;
+    border: 1px solid #e3e3e3;
+}
+
+
+.form_submit {
+    float: right;
+    margin-right: -21px;
+    margin-top: 10px;
+    padding: 12px 35px;
+    color: #FFF;
+    background-color: #4F345A;
+    border-bottom: 2px solid #e7dfd2;
+    border-right: 2px solid #e7dfd2;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+
+}
+
 /*--------Small size and above-----------*/
 @media (min-width: 450px){
     h1 {
