@@ -274,15 +274,14 @@ tbody {
 }
 
 .first_form {
-    width: 550px;
     margin: auto;
     background-color: #FFF;
-    padding: 30px;
+    padding: 12px;
 }
 
 #subject {
     height: 150px;
-    width: 100%;
+    width: 95%;
     display: block;
     padding: 0px 10px;
     border: 1px solid #e3e3e3;
@@ -298,7 +297,7 @@ tbody {
 
 .form-input {
     display: block;
-    width: 100%;
+    width: 95%;
     height: 40px;
     margin-bottom: 50px;
     margin-top: 15px;
@@ -320,6 +319,14 @@ tbody {
     text-transform: uppercase;
     letter-spacing: 2.5px;
 
+}
+
+#vertHorizCenter9 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
 }
 
 /*--------Small size and above-----------*/
@@ -434,6 +441,14 @@ tbody {
     .content3 {
         width: 113%;
         margin-top: 30px;
+    }
+
+    #vertHorizCenter9 {
+        position: relative;
+        left: 101%;
+        transform: translate(-50%, 6%);
+        width: 100%;
+        padding-bottom: 40px;
     }
 }
 
