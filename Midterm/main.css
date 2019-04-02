@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
 
 body {
     margin: 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Karla', sans-serif;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1px;
@@ -63,7 +65,8 @@ nav li:last-child {
 }
 
 .active-link {
-    border-bottom: 3px solid #4F345A;
+    background-color: #bea57c;
+    /*border-bottom: 3px solid #4F345A;*/
     font-weight: 700;
 }
 
@@ -91,7 +94,7 @@ header {
 /*BODY*/
 
 h1{
-    font-family: 'Tangerine', cursive;
+    font-family: 'Pinyon Script', cursive;
     color: white;
     font-size: 80px;
     margin-top: -94px;
@@ -100,6 +103,8 @@ h1{
     /* margin: 87px; */
     text-align: right;
     text-shadow: 2px 2px 12px #4F345A;
+    letter-spacing: 0.8px;
+    font-weight: 400;
 }
 
 .content {
@@ -166,6 +171,8 @@ h1{
     font-size: 60px;
 }
 
+/******** About **********/
+
 #vertHorizCenter4 {
     position: relative;
     left: 61%;
@@ -179,6 +186,38 @@ h1{
     padding: 0px;
 }
 
+#quote {
+    position: relative;
+    left: 64%;
+    transform: translate(-64%, 6%);
+    width: 85%;
+    padding-bottom: 40px;
+
+    text-align: center;
+    color: #bea57c;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+
+.location {
+    position: relative;
+    left: 64%;
+    transform: translate(-64%, 6%);
+    width: 85%;
+    padding-bottom: 40px;
+
+    text-align: center;
+    min-height: 107px;
+}
+
+.content p {
+    line-height: 34px;
+}
+
+/********** Menu ************/
+
 table {
     display: block;
     padding-bottom: 15px;
@@ -189,12 +228,15 @@ table {
 }*/
 
 th {
-    font-size: 24px;
+    font-size: 28px;
     padding-bottom: 51px;
+    color: #bea57c;
 }
 
 td {
-    padding-bottom: 20px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e7dfd2;
 }
 
 td:nth-child(odd) {
@@ -242,6 +284,9 @@ tbody {
     padding-bottom: 40px;
 }
 
+
+
+
 /*-------Contact Information---------*/
 
 .contact_about .contact_h1 {
@@ -270,7 +315,7 @@ tbody {
     align-content: center;
     letter-spacing: 1.2px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .first_form {
@@ -307,7 +352,6 @@ tbody {
 
 
 .form_submit {
-    float: right;
     margin-right: -21px;
     margin-top: 10px;
     padding: 12px 35px;
@@ -319,6 +363,9 @@ tbody {
     text-transform: uppercase;
     letter-spacing: 2.5px;
 
+    position: relative;
+    left: 55%;
+    transform: translate(-55%, 6%);
 }
 
 #vertHorizCenter9 {
@@ -327,6 +374,7 @@ tbody {
     transform: translate(-61%, 6%);
     width: 91%;
     padding-bottom: 40px;
+    min-height: 827px;
 }
 
 /*--------Small size and above-----------*/
@@ -380,8 +428,8 @@ tbody {
 
     h1 {
         font-size: 124px;
-        margin-top: -108px;
-        margin-bottom: 87px;
+        margin-top: -125px;
+        margin-bottom: 153px;
         margin-right: 43px;
     }
     body {
@@ -414,10 +462,21 @@ tbody {
         min-height: 236px;
     }
 
+    #quote {
+        left: 63%;
+        transform: translate(-63%, 6%);
+        width: 100%;
+    }
+
+    .content4 {
+        text-align: center;
+
+    }
+
     #vertHorizCenter5 {
         left: 50%;
         transform: translate(-50%, 5%);
-        width: 58%;
+        width: 59%;
     }
 
     #vertHorizCenter6 {
@@ -450,6 +509,10 @@ tbody {
         width: 100%;
         padding-bottom: 40px;
     }
+
+    .form_submit {
+        left: 52%;
+        transform: translate(-52%, 6%);
 }
 
 /*--------Large size and above-----------*/
@@ -516,5 +579,4 @@ tbody {
         transform: translate(-50%, 3%);
         width: 54%;
     }
-
 
