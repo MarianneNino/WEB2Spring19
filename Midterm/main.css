@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-@import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
 
 body {
@@ -181,6 +179,14 @@ h1{
     padding-bottom: 40px;
 }
 
+#about {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
 #girlImg {
     max-width: 100%;
     padding: 0px;
@@ -188,32 +194,24 @@ h1{
 
 #quote {
     position: relative;
-    left: 64%;
-    transform: translate(-64%, 6%);
-    width: 85%;
+    left: 62%;
+    transform: translate(-62%, 6%);
+    width: 100%;
     padding-bottom: 40px;
-
     text-align: center;
     color: #bea57c;
     font-family: 'Pinyon Script', cursive;
-    font-size: 50px;
+    font-size: 28px;
     letter-spacing: 0.8px;
     font-weight: 100;
 }
 
-.location {
-    position: relative;
-    left: 64%;
-    transform: translate(-64%, 6%);
-    width: 85%;
-    padding-bottom: 40px;
-
-    text-align: center;
-    min-height: 107px;
-}
-
 .content p {
     line-height: 34px;
+}
+
+.content4 {
+    text-align: center;
 }
 
 /********** Menu ************/
@@ -390,7 +388,7 @@ tbody {
     #vertHorizCenter3 {
         transform: translate(-23%, 13%);
     }
-
+}
 
 /*--------Tablet size and above-----------*/
 @media(min-width: 768px) {
@@ -463,9 +461,10 @@ tbody {
     }
 
     #quote {
-        left: 63%;
-        transform: translate(-63%, 6%);
+        left: 50%;
+        transform: translate(-50%, 6%);
         width: 100%;
+        font-size: 50px;
     }
 
     .content4 {
@@ -552,7 +551,12 @@ tbody {
     }
 
     #vertHorizCenter4 {
-        transform: translate(-61%, 0%);
+        transform: translate(-64%, 17%);
+        width: 80%;
+    }
+
+    #about {
+        transform: translate(-66%, 53%);
         width: 80%;
     }
 
@@ -579,4 +583,5 @@ tbody {
         transform: translate(-50%, 3%);
         width: 54%;
     }
-
+}
+}
