@@ -179,6 +179,69 @@ h1{
     padding: 0px;
 }
 
+table {
+    display: block;
+    padding-bottom: 15px;
+}
+
+/*tr td {
+    padding: 10px 0px;
+}*/
+
+th {
+    font-size: 24px;
+    padding-bottom: 51px;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+td:nth-child(odd) {
+    padding-right: 96px;
+}
+
+/*td:nth-child(even) {
+    text-align: right;
+}*/
+
+tbody {
+    font-size: 18px;
+    text-align: left;
+}
+
+#vertHorizCenter5 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
+#vertHorizCenter6 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
+#vertHorizCenter7 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 81%;
+    padding-bottom: 40px;
+}
+
+#vertHorizCenter8 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
 /*--------Small size and above-----------*/
 @media (min-width: 450px){
     h1 {
@@ -261,6 +324,36 @@ h1{
 
     .content {
         padding: 0px;
+        min-height: 236px;
+    }
+
+    #vertHorizCenter5 {
+        left: 50%;
+        transform: translate(-50%, 5%);
+        width: 58%;
+    }
+
+    #vertHorizCenter6 {
+        left: 50%;
+        transform: translate(-50%, 5%);
+        width: 56%;
+    }
+
+    #vertHorizCenter7 {
+        left: 50%;
+        transform: translate(-50%, 5%);
+        width: 47%;
+    }
+
+    #vertHorizCenter8 {
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 68%;
+    }
+
+    .content3 {
+        width: 113%;
+        margin-top: 30px;
     }
 }
 
@@ -291,11 +384,42 @@ h1{
     }
 
     .content {
-        min-height: 229px;
+        min-height: 180px;
         padding: 0px;
+    }
+
+    .content3 {
+        width: 110%;
+        margin-top: 30px;
     }
 
     #vertHorizCenter4 {
         transform: translate(-61%, 0%);
         width: 80%;
     }
+
+    #vertHorizCenter5 {
+        left: 50%;
+        transform: translate(-50%, 5%);
+        width: 46%;
+    }
+
+    #vertHorizCenter6 {
+        left: 56%;
+        transform: translate(-50%, 5%);
+        width: 55%;
+    }
+
+    #vertHorizCenter7 {
+        left: 56%;
+        transform: translate(-50%, 5%);
+        width: 47%;
+    }
+
+    #vertHorizCenter8 {
+        left: 50%;
+        transform: translate(-50%, 3%);
+        width: 54%;
+    }
+
+
