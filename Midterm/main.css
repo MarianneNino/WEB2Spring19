@@ -301,6 +301,8 @@ tbody {
     letter-spacing: .4px;
     line-height: 29px;
     padding-bottom: 26px;
+    color: #c3a376;
+    font-weight: 600;
 }
 
 .forms {
@@ -356,8 +358,8 @@ tbody {
     padding: 12px 35px;
     color: #FFF;
     background-color: #4F345A;
-    border-bottom: 2px solid #e7dfd2;
-    border-right: 2px solid #e7dfd2;
+    border-bottom: 2px solid #bea57c;
+    border-right: 2px solid #bea57c;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
