@@ -1,0 +1,22 @@
+#container {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    background: #B7CECE;
+    margin: auto;
+  }
+
+#animate {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FF8360;
+  }
+
+  button {
+      padding: 10px;
+      background-color: #E2E2E2;
+      font-size: 12px;
+      margin: 0px 46%;
+  }

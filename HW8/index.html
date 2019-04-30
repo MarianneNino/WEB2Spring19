@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body id="mainBody">
+
+<h1 onclick="changeText(this)">Click here!</h1>
+
+<script>
+function changeText(id) {
+    id.innerHTML = "Just kidding!";
+}
+</script>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 600) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>
