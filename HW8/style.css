@@ -14,9 +14,17 @@
     background-color: #FF8360;
   }
 
-  button {
+  #button1 {
       padding: 10px;
       background-color: #E2E2E2;
       font-size: 12px;
-      margin: 0px 46%;
+      float: left;
+      margin-left: 200px;
   }
+
+  #button2 {
+    padding: 10px;
+    background-color: #E2E2E2;
+    font-size: 12px;
+    float: right;
+}

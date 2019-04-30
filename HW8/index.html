@@ -9,15 +9,48 @@
 </head>
 <body id="mainBody">
 
-<h1 onclick="changeText(this)">Click here!</h1>
+<div id="bu1">
+<p><button onclick="myFunction()" id="button2">Back</button></p> 
+<script>
+
+var changeColor = function(){
+        var redColor = Math.random()*255;
+        var greenColor = Math.random()*255;
+        var blueColor = Math.random()*255;
+
+        
+        var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+        console.log(textColor);
+
+        var subHeader = numberSpan.parentElement;
+
+        //subHeader.style.color = textColor;
+        var body = document.getElementById("mainBody");
+
+        body.style.color = textColor;
+    }
+
+
+
+    var myButton = document.getElementById("button2");
+
+    myButton.addEventListener("click", changeColor);
+</script>
+<h1 onclick="changeText(this)" id="h1">Click here!</h1>
+</div>
+
 
 <script>
 function changeText(id) {
     id.innerHTML = "Just kidding!";
 }
+document.getElementById("h1").style.color = "#FF8360";
+document.getElementById("h1").style.textAlign = "center";
+document.getElementById("h1").style.fontSize = "50px";
+document.getElementById("h1").style.margin = "120px 0px 100px 0px";
 </script>
 
-<p><button onclick="myMove()">Click Me</button></p> 
+<p><button onclick="myMove()" id="button1">Click Me</button></p> 
 
 <div id ="container">
   <div id ="animate"></div>
