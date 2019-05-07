@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+    margin: 0px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION*/
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    display: none;
+    margin: 0px;
+    background-color: #E574BC;
+}
+
+.display-toggle {
+    padding: 3px;
+    width: 40px;
+    position: relative;
+    right: 0px;
+    margin-top: -50px;
+    float: right;
+}
+
+.display-toggle .stripe {
+    display: block;
+    margin-bottom: 7px;
+    width: 10px;
+    height: 1px;
+    margin-top: 4px;
+}
+
+.display-toggle .stripe::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    border-top: 3px solid gray;
+    height: 3px;
+}
+
+.display-toggle:hover + ul {
+    display: block;
+}
+
+nav li {
+    font-family: 'Karla', sans-serif;
+    /*background-color: #D7BCC8;*/
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e7dfd2;
+    font-size: 20px;
+}
+
+nav li:last-child {
+    border-bottom: 0px;
+}
+
+.active-link {
+    background-color: #050505;
+    /*border-bottom: 3px solid #4F345A;*/
+    font-weight: 700;
+    color: black;
+}
+
+nav a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 36px;
+}
+
+
+#logo img{
+
+
+    display: block;
+    /*height: 20px;*/
+    text-align: left;
+    background-color: #ffffff;
+}
+
+/*BODY*/
+
+.arth1{
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: rgba(165, 204, 209, 0.603);
+    margin-top: -313px;
+    margin-left: 30px;
+}
+
+.subtitle {
+
+    font-size: 30px;
+    margin-left: 40px;
+    padding-top: 40px;
+}
+    
+.art {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 40px;
+}
+
+.image-container {
+    background-position: center center;
+}
+
+
+/*--------Small size and above-----------*/
+@media (min-width: 450px){
+
+}
+
+/*--------Tablet size and above-----------*/
+@media(min-width: 768px) {
+    nav {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 70;
+    }
+
+    nav ul{
+        margin: 0px;
+        display: block;
+        text-align: right;
+        list-style: none;
+   }
+    nav li {
+        display: inline-block;
+        border-bottom: 0px;
+        min-width: 9%;
+        font-size: 18px;
+    }
+
+    nav li a{
+        font-weight: 900;
+    }
+
+    .image-container {
+        height: 717px;
+    }
+
+    .display-toggle {
+        display: none;
+    }
+
+    body {
+        font-size: 22px;
+    }
+
+
+/*--------Large size and above-----------*/
+@media (min-width: 992px){
+    body{
+        min-height: 1500px;
+    }
+
+    .arth1{
+        font-family: 'Righteous', cursive;
+        font-size: 70px;
+        color: rgba(165, 204, 209, 0.603);
+        margin-top: -213px;
+        margin-left: 50px;
+    }
+
+    main {
+        width: 1125px;
+    }
+
+    .subtitle {
+        margin-left: 165px;
+    }
+
+    .art {
+        margin: 0px 165px 40px;
+    }
+}
+}
