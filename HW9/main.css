@@ -7,6 +7,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1px;
+    min-height: 1500px;
 }
 
 /* NAVIGATION*/
@@ -76,13 +77,12 @@ nav a{
 }
 
 
-#logo img{
-
-
+img{
     display: block;
     /*height: 20px;*/
     text-align: left;
-    background-color: #ffffff;
+    max-width: 115px;
+    position: absolute;
 }
 
 /*BODY*/
@@ -111,6 +111,8 @@ nav a{
 .image-container {
     background-position: center center;
 }
+
+
 
 
 /*--------Small size and above-----------*/
