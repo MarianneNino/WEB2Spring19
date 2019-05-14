@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 50px;
+    color: #F9564F;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.drop-down{
+    font-family: 'Boogaloo', cursive;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: #0C0A3E;
+    text-align: center;
+    border-right: 2px solid #F9564F;
+    border-bottom: 2px solid #F9564F;
+    color: #ffffff;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+
+#result {
+    margin: auto;
+    padding: 2% 25%;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    line-height: 30px;
+}

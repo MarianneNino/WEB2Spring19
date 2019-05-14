@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Popular music genres:</h1>
+
+
+        <script type="text/javascript">
+            function dropdownTip(value){
+                console.log(value);
+                    document.getElementById("result").innerHTML = value;
+                }
+        </script>
+            
+        <select onChange="dropdownTip(this.value)" name="search_type" class="drop-down">
+            <option selected="selected" value="Blues is a music genre and musical form which was originated in the Deep South of the United States around the 1870s by African Americans from roots in African musical traditions, African-American work songs, and spirituals.">Blues</option>    
+            <option value="It takes its roots from genres such as folk music (especially Appalachian folk and Western music) and blues.">Country</option>
+            <option value="Electronic music is music that employs electronic musical instruments, digital instruments and circuitry-based music technology.">Electronic</option>
+            <option value="It consists of a stylized rhythmic music that commonly accompanies rapping, a rhythmic and rhyming speech that is chanted.">Hip Hop</option>
+            <option value="It originated in the late 19th and early 20th centuries, and developed from roots in blues and ragtime. Jazz is seen by many as 'America's classical music'.">Jazz</option>
+            <option value="Pop music is a genre of popular music that originated in its modern form in the United States and United Kingdom during the mid-1950s.">Pop</option>
+            <option value="It has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the genres of blues, rhythm and blues, and from country music.">Rock</option>
+        </select>
+        
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
