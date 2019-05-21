@@ -53,19 +53,25 @@ h1 {
 }
 
 #uploadForm {
-    margin-left: 100%;
-
-    
+    margin-left: 100%;   
 }
 
 button {
-    margin: center;
+    margin-left: 30%;
     text-align: center;
-    padding: 20px;
+    
+    padding: 10px;
     background-color: black;
     color: aliceblue;
     font-size: 19px;
-    margin-left: 40%;
+    display: block;
+    position: relative;
+}
+
+.bgColor {
+    font-size: 20px;
+    display: block;
+    position: fixed;
 }
 
 /*  */
@@ -76,7 +82,7 @@ button {
     max-width: 50%;
   }
   button {
-    margin-left: 30%;
+    margin-left: 37%;
   }   
 }
 
@@ -88,7 +94,7 @@ button {
     max-width: 100%;
   }
   button {
-    margin-left: 20%;
+    margin-left: 40%;
   }   
 }
 </style>
@@ -102,62 +108,64 @@ button {
 
 <!-- image grid -->
 <div class="row"> 
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1461617572307-a49f337ffbd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic1" style="width:100%">
-    <button id="bt1">Remove</button>
+    <div class="column">
+        <img src="https://images.unsplash.com/photo-1461617572307-a49f337ffbd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic1" style="width:100%">
+        <button id="bt1">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1473073826085-dafe61d85c04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic2" style="width:100%">
-    <button id="bt2">Remove</button>
+        <img src="https://images.unsplash.com/photo-1473073826085-dafe61d85c04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic2" style="width:100%">
+        <button id="bt2">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1499184949561-704bad5f6cd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" id="pic3" style="width:100%">
-    <button id="bt3">Remove</button>
+        <img src="https://images.unsplash.com/photo-1499184949561-704bad5f6cd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" id="pic3" style="width:100%">
+        <button id="bt3">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1495164678535-ecbd76d9fa7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" id="pic4" style="width:100%">
-    <button id="bt4">Remove</button>
+        <img src="https://images.unsplash.com/photo-1495164678535-ecbd76d9fa7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" id="pic4" style="width:100%">
+        <button id="bt4">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1527022206739-2c7edca55829?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" id="pic5" style="width:100%">
-    <button id="bt5">Remove</button>
+        <img src="https://images.unsplash.com/photo-1527022206739-2c7edca55829?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" id="pic5" style="width:100%">
+        <button id="bt5">Remove</button>
+    </div>
 
-  </div>
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1509745635243-4e6e645c62cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic6" style="width:100%">
-    <button id="bt6">Remove</button>
+    <div class="column">
+        <img src="https://images.unsplash.com/photo-1509745635243-4e6e645c62cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic6" style="width:100%">
+        <button id="bt6">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1525939864518-b53937989bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" id="pic7" style="width:100%">
-    <button id="bt7">Remove</button>
-    
-    <img src="https://images.unsplash.com/photo-1495584721172-1bddffac2f5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" id="pic8" style="width:100%">
-    <button id="bt8">Remove</button>
-    
-</div>  
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1466446198467-e45c851bbd5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic9" style="width:100%">
-    <button id="bt9">Remove</button>
-    
-    <img src="https://images.unsplash.com/photo-1515049900653-f4f66b91c119?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic10" style="width:100%">
-    <button id="bt10">Remove</button>
+        <img src="https://images.unsplash.com/photo-1525939864518-b53937989bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" id="pic7" style="width:100%">
+        <button id="bt7">Remove</button>
+        
+        <img src="https://images.unsplash.com/photo-1495584721172-1bddffac2f5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" id="pic8" style="width:100%">
+        <button id="bt8">Remove</button>    
+    </div>  
 
-    <img src="https://images.unsplash.com/photo-1478766318990-362013e9cd01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic11" style="width:100%">
-    <button id="bt11">Remove</button>
+    <div class="column">
+        <img src="https://images.unsplash.com/photo-1466446198467-e45c851bbd5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic9" style="width:100%">
+        <button id="bt9">Remove</button>
+        
+        <img src="https://images.unsplash.com/photo-1515049900653-f4f66b91c119?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic10" style="width:100%">
+        <button id="bt10">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1462413183252-1d84faa2fbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic12" style="width:100%">
-    <button id="bt12">Remove</button>
+        <img src="https://images.unsplash.com/photo-1478766318990-362013e9cd01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic11" style="width:100%">
+        <button id="bt11">Remove</button>
 
-    <img src="https://images.unsplash.com/photo-1515856439-547d33f09ae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic13" style="width:100%">
-    <button id="bt13">Remove</button>
+        <img src="https://images.unsplash.com/photo-1462413183252-1d84faa2fbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic12" style="width:100%">
+        <button id="bt12">Remove</button>
 
-  </div>
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1517270544-fd475d3fce1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" sid="pic14" tyle="width:100%">
-    <button id="bt14"> Remove</button>
+        <img src="https://images.unsplash.com/photo-1515856439-547d33f09ae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic13" style="width:100%">
+        <button id="bt13">Remove</button>
+    </div>
 
-    <img src="https://images.unsplash.com/photo-1474710820418-dd5406ee35d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic15" style="width:100%">
-    <button id="bt15">Remove</button>
+    <div class="column">
 
-    <img src="https://images.unsplash.com/photo-1556819444-f290ee8117ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic16" style="width:100%">
-    <button id="bt16">Remove</button>
+        <img src="https://images.unsplash.com/photo-1512433202890-1e2797672e00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic14" style="width:100%">
+        <button id="bt14">Remove</button>
 
-  </div>
+        <img src="https://images.unsplash.com/photo-1474710820418-dd5406ee35d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic15" style="width:100%">
+        <button id="bt15">Remove</button>
+
+        <img src="https://images.unsplash.com/photo-1556819444-f290ee8117ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" id="pic16" style="width:100%">
+        <button id="bt16">Remove</button>
+
+
+    </div>
 
     <div class="bgColor">
         <form id="uploadForm" action="upload.php" method="post">
@@ -192,6 +200,7 @@ button {
     }
 </script>
 <script>
+
 $(document).ready(function(){
   $("#bt1").click(function(){
     $("#pic1").remove();
@@ -257,11 +266,7 @@ $(document).ready(function(){
     $("#pic13").remove();
   });
 });
-$(document).ready(function(){
-  $("#bt14").click(function(){
-    $("#pic14").remove();
-  });
-});
+
 $(document).ready(function(){
   $("#bt15").click(function(){
     $("#pic15").remove();
@@ -271,6 +276,8 @@ $(document).ready(function(){
   $("#bt16").click(function(){
     $("#pic16").remove();
   });
+
+});
 
   $("#uploadForm").on('submit',(function(e) {
 		e.preventDefault();
@@ -292,8 +299,6 @@ $(document).ready(function(){
 	    	} 	        
 	   });
 	}));
-
-});
 
 </script>
 
