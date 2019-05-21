@@ -52,6 +52,22 @@ h1 {
   vertical-align: middle;
 }
 
+#uploadForm {
+    margin-left: 100%;
+
+    
+}
+
+button {
+    margin: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 19px;
+    margin-left: 40%;
+}
+
 /*  */
 @media screen and (max-width: 800px) {
   .column {
@@ -59,6 +75,9 @@ h1 {
     flex: 50%;
     max-width: 50%;
   }
+  button {
+    margin-left: 30%;
+  }   
 }
 
 /*  */
@@ -68,6 +87,9 @@ h1 {
     flex: 100%;
     max-width: 100%;
   }
+  button {
+    margin-left: 20%;
+  }   
 }
 </style>
 <body>
@@ -136,9 +158,39 @@ h1 {
     <button id="bt16">Remove</button>
 
   </div>
+
+    <div class="bgColor">
+        <form id="uploadForm" action="upload.php" method="post">
+            <div id="targetOuter">
+                <div id="targetLayer"></div>
+                <img src="https://via.placeholder.com/250"  class="icon-choose-image" />
+                <div class="icon-choose-image" >
+                <input name="userImage" id="userImage" type="file" class="inputFile" onChange="showPreview(this);" />
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Upload Photo" class="btnSubmit" />
+            </div>
+        </form>
+    </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    function showPreview(objFileInput) {
+        if (objFileInput.files[0]) {
+            var fileReader = new FileReader();
+            fileReader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+                $("#targetLayer").html('<img src="'+e.target.result+'" width="300px" class="upload-preview" />');
+                $("#targetLayer").css('opacity','0.7');
+                $(".icon-choose-image").css('opacity','0.5');
+            }
+            fileReader.readAsDataURL(objFileInput.files[0]);
+        }
+    }
+</script>
 <script>
 $(document).ready(function(){
   $("#bt1").click(function(){
@@ -219,6 +271,28 @@ $(document).ready(function(){
   $("#bt16").click(function(){
     $("#pic16").remove();
   });
+
+  $("#uploadForm").on('submit',(function(e) {
+		e.preventDefault();
+		$.ajax({
+        	url: "upload.php",
+			type: "POST",
+			data:  new FormData(this),
+			beforeSend: function(){$("#body-overlay").show();},
+			contentType: false,
+    	    processData:false,
+			success: function(data)
+		    {
+			$("#targetLayer").html(data);
+			$("#targetLayer").css('opacity','1');
+			setInterval(function() {$("#body-overlay").hide(); },500);
+			},
+		  	error: function() 
+	    	{
+	    	} 	        
+	   });
+	}));
+
 });
 
 </script>
