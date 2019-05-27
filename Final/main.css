@@ -170,13 +170,12 @@ nav a{
       background-color: #0193A0;
   }
 
-  .botton-paragraph p{
+  .botton-paragraph p {
     color: #ffffff;
-    font-size: 25px;
-    padding: 0px 20%;
-    padding-top: 120px;
-    line-height: 35px;
-
+    font-size: 20px;
+    padding: 0px 13%;
+    padding-top: 46px;
+    line-height: 26px;
 }
 
 /*.botton-paragraph {
@@ -245,7 +244,7 @@ nav a{
     }
 
     .topimage {
-        height: 500px;
+        height: 400px;
     }
 
     .header{
@@ -266,10 +265,18 @@ nav a{
         width: 260px;
         padding: 10px 10px;
     }
+
+    .botton-paragraph p{
+        font-size: 25px;
+        padding-top: 109px;
+    }
 }
     
 /*--------Large size and above-----------*/
 @media (min-width: 992px) {
+    .topimage {
+        height: 600px;
+    }
     .flex-box {    
         width: 270px;
         height: 270px;
@@ -281,5 +288,11 @@ nav a{
 
     .header{
         margin: 20% 10%;
+    }
+
+    .botton-paragraph p{
+        padding: 0px 20%;
+        padding-top: 120px;
+        line-height: 35px;
     }
 }
