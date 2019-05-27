@@ -134,12 +134,7 @@ nav a{
     height: 260px;
 
 
-    
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
+
 
 
     background-position: center top;
@@ -178,9 +173,32 @@ nav a{
     line-height: 26px;
 }
 
+.flex-box2 {
+    margin-bottom: 30px;
+
+    width: 3000px;
+    height: 300px;
+
+
+  }
+
+#boxAbout {
+    min-height: 500px;
+}
+
 /*.botton-paragraph {
     margin: 10%;
 }*/
+
+
+
+
+
+/*------------ABOUT PAGE-----------------*/
+#hAbout {
+    color: #FF8811;
+}
+
 
 
 
@@ -295,4 +313,6 @@ nav a{
         padding-top: 120px;
         line-height: 35px;
     }
+
+
 }

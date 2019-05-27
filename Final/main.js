@@ -2,12 +2,12 @@
 
     <script>
     
-        $(document).ready(function() {
-            $("#show_hide").click(function () {
-                $( ".men_ex" ).toggle({
-            duration: 3000,
-            });
-            })  
-        })
+    $(document).ready(function() {
+        $("#show_hide").click(function () {
+            $( ".men_ex" ).toggle({
+        duration: 3000,
+        });
+        })  
+    })
 
     </script>
