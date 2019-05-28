@@ -5,6 +5,10 @@
         duration: 3000,
         });
         })  
+
+        $("#btn2").click(function(){
+            $(".donation-container").toggle(1000);
+          });
     })
 
 
@@ -36,8 +40,8 @@ var firstName = "";
 			
 			$(this).find("input").focus();
 		});
-		
-		//Grow the donation box if they type more than 4 numbers
+        
+        
 		$(".set-amount").keyup(function(){
 			
 			if (this.value != this.value.replace(/[^0-9\.]/g, '')) {

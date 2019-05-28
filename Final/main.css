@@ -135,8 +135,6 @@ nav a{
 
 
 
-
-
     background-position: center top;
     background-size: cover;
 
@@ -203,17 +201,53 @@ nav a{
 
 
 /*-------DONATION---------*/
+
+.buttons-donate {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 70px;
+    padding: 10px 10px;
+    letter-spacing: 1.3px;
+
+    justify-content: space-evenly;
+}
+
+.btn-donate {
+    margin: 30px;
+    padding: 15px 20px;
+    line-height: 19px;
+
+}
+
+.buttons-donate button {
+    background-color: #0193A0;
+    width: 100%;
+}
+
+.btn-donate h4{
+    font-size: 20px;
+    color: rgb(194, 191, 189);
+    margin-top: 14px;
+
+}
+
+.btn-donate p{
+    color: #F5F5F5;
+    font-size: 12px;
+}
+
+
 .donation-container {
 	height: 1000px;
 	font-weight: 500;
 	font-size: 20px;
-	text-transform: uppercase;
 	margin-top: 35px;
 }
 
 .donation-box {
     width: 260px;
-    height: 575px;
+    height: 1185px;
     padding: 20px;
 	background-color: #F5F5F5;
 	border-top-left-radius: 4px;
@@ -251,7 +285,10 @@ nav a{
 	bottom: 0px;
 	position: absolute;
 	cursor: pointer;
-	font-weight: 800;
+    font-weight: 800;
+    
+    margin-left: 15%;
+    margin-bottom: 20px;
 }
 
 .donation-box .fields {
@@ -343,6 +380,10 @@ nav a{
 	max-width: 81px;
 }
 
+.fields label {
+    margin-bottom: 10px;
+}
+
 .switch {
     position: relative;
     /* top: 190px; */
@@ -360,7 +401,7 @@ nav a{
   float: left;
   width: 49%;
   line-height: 26px;
-  font-size: 11px;
+  font-size: 13px;
   color: #5C5C5C;
   text-align: center;
   cursor: pointer;
@@ -383,7 +424,7 @@ nav a{
 }
 .switch-input:checked + .switch-label {
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
   
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
@@ -414,6 +455,7 @@ nav a{
 
 .checkboxes {
     margin-top: 60px;
+    text-transform: uppercase;
 }
 
 .checkboxes label {
@@ -571,6 +613,36 @@ nav a{
         font-size: 25px;
         padding-top: 109px;
     }
+
+
+
+
+    .buttons-donate button {
+        width: 45%;
+        height: 180px;
+    }
+
+    .donation-box {
+        width: 500px;
+        height: 1086px;
+        padding: 30px;
+    }
+
+    .donation-box .amount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .donation-box .amount .button {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .donation-box .donate-button {
+        margin-left: 30%;
+    }
 }
     
 /*--------Large size and above-----------*/
@@ -601,19 +673,6 @@ nav a{
 
     .donation-box {
         width: 590px;
-        height: 486px;
-        padding: 30px;
     }
 
-    .donation-box .amount {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-
-    .donation-box .amount .button {
-        flex-wrap: wrap;
-        width: 100%;
-    }
 }
