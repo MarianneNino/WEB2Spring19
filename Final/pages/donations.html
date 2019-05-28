@@ -12,8 +12,11 @@
 
     <script>
         $(document).ready(function() {
+            $("#btn1").click(function(){
+                $(".donation-container").toggle(400);
+            });
             $("#btn2").click(function(){
-                $(".donation-container").toggle(900);
+                $(".donation-container2").toggle(400);
             });
         })
     </script>
@@ -46,7 +49,7 @@
         
         <!--Figure out how to toggle the button to show the form-->
         <div class="buttons-donate">
-            <button class="btn-donate">
+            <button class="btn-donate" id="btn1">
                 <div><h4>$30 per month</h4></div>
                 <div><p>Will help ensure that struggling parents can give their children what they need to grow up, free from hunger.</p> </div>
             </button>
@@ -57,15 +60,8 @@
         </div>
 
         <div class="donation-container">
-            
+        
                 <div class="donation-box">
-
-                    <div class="amount">
-                        <div class="button">$20</div>
-                        <div class="button">$50</div>
-                        <div class="button">$100</div>
-                        <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-                    </div>
 
                     <div class="donation2"><h2>Personal Information</h2></div>
 
@@ -91,13 +87,6 @@
                         <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="car">
                     </div>
                     
-                    <div class="switch">
-                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-                        <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-                        <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-                        <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-                        <span class="switch-selection"></span>
-                    </div>
                     
                     <div class="checkboxes">
                         <input type="checkbox" id="receipt" class="checkbox" />
@@ -116,15 +105,84 @@
                     
                     <div class="donate-button"><i class="fa fa-credit-card"></i> Donate</div>
                 </div>
+
+
+                <div class="empty"></div>
                 
             </div>
 
-        <form action="">
+        <div class="donation-container2">
+            
+            <div class="donation-box">
 
-        </form>
+                <div class="amount">
+                    <div class="button">$20</div>
+                    <div class="button">$50</div>
+                    <div class="button">$100</div>
+                    <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+                </div>
+
+                <div class="donation2"><h2>Personal Information</h2></div>
+
+                <div class="fields">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="firstName" placeholder="Sam"> </input>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Smith"> </input>
+                    <label for="email-adress">Email</label>
+                    <input type="text" id="email" placeholder="example@example.com"> </input>
+                </div>
+
+                <div class="donation2"><h2>Credid Card Information</h2></div>
+                
+                <div class="fields">
+                    <label for="card-number">Credit Card Number</label>
+                    <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number" id="card-number">
+                    <label for="card-number">Expiration Date</label>
+                    <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration" id="card-expiration">
+                    <label for="card-number">CVV Number</label>
+                    <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv">
+                    <label for="card-number">Billing Zip Code</label>
+                    <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="car">
+                </div>
+                
+                <div class="switch">
+                    <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+                    <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                    <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                    <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                    <span class="switch-selection"></span>
+                </div>
+                
+                <div class="checkboxes">
+                    <input type="checkbox" id="receipt" class="checkbox" />
+                    <label for="receipt">Email Me A Receipt</label>
+                    <br />
+                    <input type="checkbox" id="anon" class="checkbox" />
+                    <label for="anon">Give Anonymously</label>
+                    <br />
+                    <input type="checkbox" id="list" class="checkbox" />
+                    <label for="list">Add Me To Email List</label>
+                </div>
+                
+                <div class="confirm">
+                    
+                </div>
+                
+                <div class="donate-button"><i class="fa fa-credit-card"></i> Donate</div>
+            </div>
+
+            <div class="empty"></div>
+            
+        </div>
+
+
+           
 
     
     </div>
+
+
 
 
 </body>
