@@ -6,9 +6,11 @@ body {
     letter-spacing: 1px;
 }
 
+
+
 body p {
     font-size: 22px;
-    line-height: 31px;
+    line-height: 39px;
 }
 /* NAVIGATION*/
 header {
@@ -26,7 +28,7 @@ nav ul{
     background-color: #ffffff;
 }
 
-.display-toggle {
+/* .display-toggle {
     padding: 3px;
     width: 40px;
     position: relative;
@@ -42,15 +44,15 @@ nav ul{
     width: 10px;
     height: 1px;
     margin-top: 4px;
-}
+} */
 
-.display-toggle .stripe::before {
+/* .display-toggle .stripe::before {
     content: '';
     position: absolute;
     width: 21px;
     border-top: 3px solid gray;
     height: 3px;
-}
+} */
 
 .display-toggle:hover + ul {
     justify-content: flex-end;
@@ -90,6 +92,68 @@ nav a{
     width: 50px;
     flex: 1;
 }
+
+
+/* Hamburguer */
+
+#myLinks {
+    display: none;
+}
+
+.hamburger {
+    padding: 15px 15px;
+    float: right;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 15px 0px 0px 0px;
+    overflow: visible; 
+  }
+  
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: black; }
+      
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+
+
 
 
 /*---------BODY----------*/
@@ -215,8 +279,8 @@ nav a{
 
 .donate-header {
     margin: 120px 5px;
-    margin: 20% 10%;
-    font-size: 30px;
+    position: relative;
+    /*font-size: 30px;*/
     color: #0193A0;
     text-align: center;
 }
@@ -237,9 +301,7 @@ nav a{
     margin: 30px 0px 30px;
     padding: 15px 25px;
     line-height: 19px;
-
-
-    
+ 
 
 }
 
@@ -262,15 +324,7 @@ nav a{
 
 }
 
-.donation-container {
-	height: 1000px;
-	font-weight: 500;
-	font-size: 25px;
-    margin-top: 35px;
-    display: none;
-}
-
-
+.donation-container 
 .donation-container2 {
 	height: 1000px;
 	font-weight: 500;
@@ -420,11 +474,6 @@ nav a{
 
 .switch {
     position: relative;
-    /* top: 190px; */
-    /* left: 15px; */
-    /* margin: 20px auto; */
-    /* height: 26px; */
-    /* width: 58.5%; */
     background: white;
     border-radius: 3px;
 }
@@ -594,7 +643,7 @@ nav a{
         list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         
     }

@@ -1,68 +1,73 @@
     
-    $(document).ready(function() {
-        $("#show_hide").click(function () {
-            $( ".men_ex" ).toggle({
-        duration: 3000,
-        });
-        })  
+$(document).ready(function() {
 
-        $("#btn2").click(function(){
-            $(".donation-container").toggle(1000);
-          });
-    })
-
-
-var firstName = "";
-		var lastName = "";
-		var email = "";
-		var dType = "";
-		var receipt = "";
-		var anon = "";
-		var list = "";
-		var amount = "";
-		
-		$('.set-amount').autoGrow(0);
-		
-		/*
-			if(isiPad || jQuery.browser.mobile){
-				$('#team').hide()
-				$('.team-mobile').show();	
-			}else{
-				$('#team').show()
-				$('.team-mobile').hide();
-			}
-		*/
-		
-		//Set & Highlight Donation Amount
-		$(".button").click(function(){
-			$(".button").removeClass("selected");
-			$(this).addClass("selected");
-			
-			$(this).find("input").focus();
-		});
+    var firstName = "";
+    var lastName = "";
+    var email = "";
+    var dType = "";
+    var receipt = "";
+    var anon = "";
+    var list = "";
+    var amount = "";
+    
+    var $hamburger = $(".hamburger");
+    
+    $hamburger.on("click", function() {
+        $hamburger.toggleClass("is-active");
+        $("#myLinks").toggle(400);
         
+    });
+    $("#show_hide").click(function () {
+        $( ".men_ex" ).toggle({duration: 3000,});
+    })  
+
+    
+
+    /*$("#btn2").click(function(){
+        $(".donation-container").toggle(1000);
+    });*/
+
+    $(".button").click(function(){
+        $(".button").removeClass("selected");
+        $(this).addClass("selected");
         
-		$(".set-amount").keyup(function(){
-			
-			if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
-		       this.value = this.value.replace(/[^0-9\.]/g, '');
-		    }
+        $(this).find("input").focus();
+    });
+    
+    
+    $(".set-amount").keyup(function(){
+        
+        if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+            this.value = this.value.replace(/[^0-9\.]/g, '');
+        }
+    });
+    
+    
+    $("input").on("change", function(){
+        
+        firstName = $("#firstName").val();
+        lastName = $("#lastName").val();
+        email = $("#email").val();
+        
+        if ( $("#one-time").prop( "checked" ) ){
+            dType = "One-Time";
+        }
+        if ( $("#monthly").prop( "checked" ) ){
+            dType = "Monthly";
+        }
 
-		});
-		
-		
-		$("input").on("change", function(){
-			// $(".donation-box").css("height", "500px");
-			
-			firstName = $("#firstName").val();
-			lastName = $("#lastName").val();
-			email = $("#email").val();
-			
-			if ( $("#one-time").prop( "checked" ) ){
-				dType = "One-Time";
-			}
-			if ( $("#monthly").prop( "checked" ) ){
-				dType = "Monthly";
-			}
+    });
 
-		});
+    $("#btn1").click(function(){
+        $(".donation-container").show(400);
+        $(".donation-container2").hide(400);
+
+    });
+
+    $("#btn2").click(function(){
+        $(".donation-container2").show(400);
+        $(".donation-container").hide(400);
+    });
+
+    
+})
