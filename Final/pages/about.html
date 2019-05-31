@@ -7,31 +7,32 @@
     <title>Westside Food Bank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
 
 <body>
     <header class="logo">
         <nav>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> 
 
-            <button class="display-toggle" onclick="showNavUl()">
-                <span class="stripe"></span>
-                <span class="stripe"></span>
-                <span class="stripe"></span>
-            </button>
+            <div class="foodbank-logo">
+                <img src="../assets/logo.png" alt="logo">
+            </div>
 
             <ul>
-                <li><img src="../assets/logo.png" alt="logo"></li>
                 <li><a href="../index.html">Home</a></li>
                 <li class="active-link"><a href="" target="_self">About</a></li>
                 <li><a href="../pages/blog.html">Blog</a></li>
-                <li><a href="../pages/donations.html">Donate</a></li>
+                <li><a href="../pages/donate.html">Donate</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="topimage" style="background-image: url(../assets/littlegirl.jpg);" alt="girl">
+    <div class="topimage" style="background-image: url(../assets/kidseating.png);" alt="girl">
     </div>
 
     <div class="main-container">
@@ -74,6 +75,9 @@
 
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../main.js"></script>
 
 
 </body>

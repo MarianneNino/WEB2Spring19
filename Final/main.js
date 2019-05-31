@@ -67,7 +67,12 @@ $(document).ready(function() {
     $("#btn2").click(function(){
         $(".donation-container2").show(400);
         $(".donation-container").hide(400);
+
     });
+
+    $(".donate-button").click(function(){
+		alert("Thank you!");
+	});
 
     
 })
