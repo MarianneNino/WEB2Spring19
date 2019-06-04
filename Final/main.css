@@ -190,10 +190,6 @@ nav a{
 
 }
 
-.main-container {
-    /* margin: 10%; */
-}
-
 .header{
     font-size: 25px;
     line-height: 42px;
@@ -214,7 +210,7 @@ nav a{
     display: -webkit-flex;
     display: flex;
     
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
   }
@@ -329,9 +325,6 @@ h2{
 }
 
 
-
-
-
 /* FOOTER */
 
 .footer {
@@ -351,9 +344,30 @@ h2{
 
 
 /*------------ABOUT PAGE-----------------*/
+.about-header {
+    color: #ffffff;
+    font-size: 29px;
+    text-align: center;
+    margin-top: 94px;
+    line-height: 44px;
+    padding: 0px 35px;
+
+}
+
+.circle-about2 {
+    background-color: rgba(255, 136, 17, 0.452);
+    padding: 1px;
+    margin-top: -120px;
+    margin-left: 90px;
+    width: 280px;
+    height: 280px;
+    display: block;
+    border-radius: 50%;
+}
+
 #hAbout {
-
-
+    color: #0193A0;
+    text-align: left;
 }
 
 .boxes2 {
@@ -364,18 +378,24 @@ h2{
 
     display: flex;
 
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
 }
+
+#img4 img {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
 .flex-box2 {
     margin-bottom: 30px;
 
     width: 3000px;
-    min-height: 300px;
 
     margin: auto;
-    padding: 40px;
+    padding: 15px 40px;
 
 }
 
@@ -397,10 +417,11 @@ h2{
 
     display: flex;
 
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
 }
+
 
 
 
@@ -889,10 +910,6 @@ h2{
         width: 90%;
     }
 
-    /* #img3 img {
-        width: 40%;
-    } */
-
 
     #img2 {
         margin-left: 439px;
@@ -912,20 +929,29 @@ h2{
         position: relative;
     }
 
-    /* .footer {
-        margin-top: 750px;
-
-    } */
-
 
     /* about */
 
     .flex-box2 {
-
         padding: 20px 100px;
     }
 
+    .circle-about2 {
+        background-color: rgba(255, 136, 17, 0.452);
+        padding: 1px;
+        float: right;
+        margin-top: -240px;
+        margin-right: 40px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
 
+    #img4 {
+        margin-left: 90px;
+        margin-top: -150px;
+        width: 40%;
+    }
 
     #donateP {
         margin: 0px 70px;
@@ -943,7 +969,7 @@ h2{
 
     .donation-box {
         width: 500px;
-        height: 1086px;
+        min-height: 1086px;
         padding: 30px;
     }
 
