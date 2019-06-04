@@ -14,12 +14,13 @@ $(document).ready(function() {
     
     $hamburger.on("click", function() {
         $hamburger.toggleClass("is-active");
-        $("#myLinks").toggle(400);
+        $(".links").toggle(0);
         
     });
     $("#show_hide").click(function () {
-        $( ".men_ex" ).toggle({duration: 3000,});
+        $( ".men_ex" ).toggle({duration: 30,});
     })  
+
 
     
 

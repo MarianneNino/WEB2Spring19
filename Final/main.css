@@ -16,7 +16,7 @@ body p {
 
 /* HEADER */
 .foodbank-logo img{
-    width: 100px;
+    width: 70px;
     position: absolute;
     padding: 20px 10px;
 }
@@ -170,25 +170,7 @@ nav a{
     padding: 0px 35px;
 }
 
-.all-headers h1{
-    color: #ffffff;
-    font-size: 70px;
-    /* font-weight: bolder; */
-    text-align: center;
-    margin-top: 89px;
-}
 
-.headers-box {
-    background-color: rgba(1, 147, 160, 0.555);
-    padding: 1px;
-    float: right;
-    margin-top: -240px;
-    margin-right: 40px;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-
-}
 
 .header{
     font-size: 25px;
@@ -463,6 +445,11 @@ h3 {
     margin-bottom: 30px;
     margin: auto;
     padding: 15px 40px;
+    min-height: 1200px;
+}
+
+.blog-content h3 {
+    margin: 30px 0px 49px;
 }
 
 .blog-content a {
@@ -473,13 +460,25 @@ h3 {
 
 
 /*-------DONATION---------*/
+.headers-box {
+    background-color: rgba(1, 147, 160, 0.555);
+    padding: 1px;
+    margin-top: -205px;
+    margin-left: 90px;
+    width: 280px;
+    height: 280px;
+    display: block;
+    border-radius: 50%;
+}
 
-.donate-header {
-    margin: 120px 5px;
-    position: relative;
-    /*font-size: 30px;*/
-    color: #0193A0;
+.all-headers {
+    color: #ffffff;
+    font-size: 29px;
     text-align: center;
+    margin-top: 94px;
+    line-height: 44px;
+    padding: 0px 35px;
+
 }
 
 
@@ -509,12 +508,6 @@ h3 {
     width: 100%;
 }
 
-.btn-donate h4{
-    font-size: 20px;
-    color: #9DD9D2;
-    margin-top: 14px;
-
-}
 
 .btn-donate p{
     color: #F5F5F5;
@@ -757,9 +750,6 @@ h3 {
 	transition: all 0.15s ease-out;
 }
 
-.checkbox:active, .checkbox:checked:active {
-	
-}
 
 .checkbox:checked {
 	background-color: #0193A0;
@@ -830,7 +820,7 @@ h3 {
     }
 
     nav ul{
-        margin-top: -150px;
+        margin-top: -166px;
         position: static;
         list-style: none;
         display: flex;
@@ -841,7 +831,8 @@ h3 {
         padding: 39px;
         padding-left: 0px;
         align-content: center;
-        height: 48px;
+        height: 74px;
+    
     }
 
 
@@ -971,17 +962,6 @@ h3 {
         width: 40%;
     }
 
-/* 
-    #img2 {
-        /* margin-left: 439px; 
-        margin-top: -70px;
-    }
-
-    #img3 {
-        /* margin-left: 90px; 
-        margin-top: -150px;
-        width: 40%;
-    } */
 
     #circle {
         background-color: rgba(255, 136, 17, 0.452);
@@ -1002,7 +982,7 @@ h3 {
         padding: 1px;
         float: right;
         margin-top: -240px;
-        margin-right: 40px;
+        margin-right: 10px;
         width: 350px;
         height: 350px;
         border-radius: 50%;
@@ -1034,7 +1014,7 @@ h3 {
     }
 
     .boxes2 {
-        margin: 30px 250px;
+        margin: 30px 50px;
     
     }
 
@@ -1051,14 +1031,42 @@ h3 {
         padding: 10px 30px 70px;
     }
     
-    
     .more-info {
-
+        width: 360px;
+        height: 360px;
     }
 
-    
+    .circle-blog {
+    background-color: rgba(1, 147, 160, 0.555);
+    padding: 1px;
+    float: right;
+    margin-top: -240px;
+    margin-right: 40px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    }
+
+    .blog-header {
+        margin-top: 134px;
+    }
+
+    #hBlog {
+            margin: 240px 90px 120px;
+    }
+
+    .blog-content {
+        padding: 15px 105px;
+        /* min-height: 952px; */
+    }
+
+    .blog-content h3 {
+        margin: 56px 0px 67px;
+    }
 
 
+
+    /* donate */
 
 
 
@@ -1243,6 +1251,10 @@ h3 {
         line-height: 44px;
     }
 
+    .boxes2 {
+        margin: 30px 250px;
+    
+    }
 
 
     .boxes3 {
@@ -1260,6 +1272,11 @@ h3 {
     }
 
 
+    .blog-content {
+        margin: 30px 250px;
+        min-height: 1000px;
+    
+    }
 
 
     .donate-header h1{
