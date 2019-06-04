@@ -328,13 +328,25 @@ h2{
     display: block;
 }
 
+
+
+
+
+/* FOOTER */
+
 .footer {
+    left: 0;
+    bottom: 0;
     background-color: #0193A0;
     color: #ffffff;
-
     position: relative;
-    padding: 30px;
+    padding: 40px;
     max-width: 100%;
+}
+
+.footer h5{
+    font-size: 28px;
+    margin:0px;
 }
 
 
@@ -1000,7 +1012,7 @@ h2{
     }
 
     .botton-paragraph p{
-        padding: 133px 180px;
+        padding: 123px 180px;
         font-size: 24px;
         line-height: 40px;
         margin-right: 700px;
