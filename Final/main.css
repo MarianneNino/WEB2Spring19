@@ -457,6 +457,30 @@ h3 {
 }
 
 
+/* gallery */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+    margin-top: -157px;
+    margin-bottom: 95px;
+  }
+  
+  .column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 
 
 /*-------DONATION---------*/
@@ -1095,6 +1119,11 @@ h3 {
     }
 
 
+    .column {
+        -ms-flex: 45%;
+        flex: 45%;
+        max-width: 45%;
+    }
 
     /* donate */
 
@@ -1361,6 +1390,12 @@ h3 {
         margin: 30px 250px;
         min-height: 900px;
     
+    }
+
+    .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
     }
 
     .headers-box {
