@@ -481,6 +481,13 @@ h3 {
 
 }
 
+#img5 img{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+}
+
 .buttons-donate h4 {
     font-size: 22px;
     color: #0193A0;
@@ -1112,6 +1119,12 @@ h3 {
         font-size: 30px;
         margin: 230px 90px 80px;
         line-height: 50px;
+    }
+
+    #img5 {
+        width: 44%;
+        margin: auto;
+        padding-bottom: 60px;
     }
 
     #donateP {
