@@ -1125,6 +1125,11 @@ h3 {
         max-width: 45%;
     }
 
+    .row {
+        margin-top: -296px;
+        margin-bottom: 250px;
+    }
+
     /* donate */
 
     .headers-box {
@@ -1388,7 +1393,7 @@ h3 {
 
     .blog-content {
         margin: 30px 250px;
-        min-height: 900px;
+        min-height: 1200px;
     
     }
 
@@ -1396,6 +1401,11 @@ h3 {
         -ms-flex: 25%;
         flex: 25%;
         max-width: 25%;
+    }
+
+    .row {
+        /* margin-top: 50px; */
+        margin-bottom: 100px;
     }
 
     .headers-box {
